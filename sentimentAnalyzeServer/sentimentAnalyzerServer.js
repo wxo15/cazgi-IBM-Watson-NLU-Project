@@ -103,7 +103,7 @@ app.get("/url/emotion", (req, res) => {
         language: "en"
       })
       .then((analysisResults) => {
-        console.log("Here");
+        //console.log("Here");
         //console.log(analysisResults.result.sentiment.document.label);
         res.send(analysisResults.result.sentiment.document.label);
       })
