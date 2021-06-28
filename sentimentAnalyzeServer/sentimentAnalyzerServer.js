@@ -64,7 +64,7 @@ app.get("/url/emotion", (req, res) => {
         language: "en"
       })
       .then((analysisResults) => {
-        res.send(analysisResults);
+        res.send(analysisResults.result.sentiment.document.label);
       })
       .catch((err) => {
         console.log("error:", err);
